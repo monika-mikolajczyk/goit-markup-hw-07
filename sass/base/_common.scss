@@ -1,0 +1,45 @@
+:root {
+    --main-font: font-family "Roboto", sans-serif;
+    --secondary-color: #2196f3;
+    --third-color: #ffffff;
+  }
+  
+  h1,
+  h2,
+  h3 {
+  margin: 0;
+  padding: 0;
+  }
+  
+  ul,
+  li {
+  margin: 0; 
+  padding: 0;   
+  }
+  /* dałam oprócz "list-style: none;" to co powyżej,
+   bo Alex powiedział na zajęciach praktycznych,
+   że lepiej dawać właśnie po przecinku, w razie
+   gdybyśmy chcieli jednak jakąś listę numerować
+   czy wypunktować */
+  
+  ul,
+  li {
+  list-style: none;    
+  }
+  
+  p {
+  padding: 0; 
+  margin: 0;   
+  }
+  
+  img {
+  display: block;
+  }
+
+  .list {
+  list-style: none;
+  }
+  
+  .link {
+  text-decoration: none;
+  }

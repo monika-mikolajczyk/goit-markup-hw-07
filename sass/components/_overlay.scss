@@ -1,0 +1,23 @@
+.overlay {
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  padding: 49px 45px 49px 24px ;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+}
+
+.options_images_list_item:hover .overlay,
+.options_images_list_item:focus .overlay,
+.options_images_list_item:hover .overlay,
+.options_images_list_item:focus .overlay {
+  transform: translateY(0);
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

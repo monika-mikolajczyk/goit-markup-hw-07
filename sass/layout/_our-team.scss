@@ -1,0 +1,54 @@
+    .our_team {
+    background-color: #F5F4FA;
+    }
+    
+    .our_team_cards_list {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .our_team_cards {
+    padding-top: 50px;
+    padding-bottom: 94px;
+    }
+    
+    .our_team_cards_list_item {
+    background: #FFFFFF;
+    /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .our_team_cards_name {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    }
+    
+    .our_team_cards_skill {
+    padding-bottom: 16px;
+    }
+
+    .our_team_cards_name {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        }
+        
+        .our_team_cards_skill {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #757575;
+        }

@@ -1,0 +1,108 @@
+/* --- header --- */
+
+.hero {
+    background-color:rgba(47, 48, 58, 0.4);
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), 
+    url('../images/background.jpg');
+    object-fit: contain;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover;
+    }
+    
+    .slogan {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */  
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+
+    .navigation-list {
+    display: flex;
+    align-items: center;
+    }
+    /* teraz przyciski "Agencja/Portfolio/Kontakt" 
+       są w jednym wierszu */
+
+    .navigation-list-item:not(:last-child) {
+    padding-right: 45px;
+    }
+    
+    .navigation-list-link {
+    position:relative;
+    text-decoration: none;    
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    cursor: pointer;
+    }
+
+    .navigation-list-link.current {
+    color: var(--secondary-color);
+    }
+    
+    .navigation-list-link:hover,
+    .navigation-list-link:focus {
+    color: #2196F3;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--secondary-color);
+    }
+    
+    .navigation-list-link.current::after
+    {
+    content:"";
+    display: block;
+    width: 53px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top:45px;
+    border-radius: 2px;
+    left:2px;
+    }
+    
+    .adress_email_telefon {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    }  
+    
+    .adress_email_telefon:active{
+    text-decoration: underline;    
+    }
+
+    .hero .container {
+    max-width: 1200px;
+    padding-top: 80px;
+    padding-bottom: 94px;
+    align-items: center;
+    }
+        
+    .slogan {
+    padding-bottom: 30px;
+    margin: auto;
+    }
+
+    .header .contact {
+    margin-left: auto;
+    }
+    .contact {
+    list-style-type: none;
+    }
