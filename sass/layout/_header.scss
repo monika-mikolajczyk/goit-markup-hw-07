@@ -16,11 +16,10 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    /* or 136% */  
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--light);
     }
 
     .navigation__list {
@@ -43,30 +42,29 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--background-color);
     cursor: pointer;
     }
 
     .navigation__link.current {
-    color: var(--secondary-color);
+    color: var(--accent);
     }
     
     .navigation__link:hover,
     .navigation__link:focus {
-    color: #2196F3;
+    color: var(--accent);
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--secondary-color);
+    color: var(--accent);
     }
     
-    .navigation__link.current::after
-    {
+    .navigation__link.current::after {
     content:"";
     display: block;
     width: 53px;
     height: 4px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent);
     position: absolute;
     top:45px;
     border-radius: 2px;
@@ -81,11 +79,10 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #757575;
-    }  
-    
-    .adress_email_telefon:active{
+    color: var(--detail-color);
+    &:active {
     text-decoration: underline;    
+    }
     }
 
     .hero .container {

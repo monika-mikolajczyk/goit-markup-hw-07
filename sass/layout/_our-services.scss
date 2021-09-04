@@ -1,4 +1,4 @@
-    .secondary_header {
+    .our-services {
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
@@ -6,31 +6,31 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--background-color);
     }
 
-    .secondary_header_list {
+    .our-services__images {
+    padding-top: 50px;
+    padding-bottom: 94px;
+    }
+
+    .our-services__list {
     display:  flex;
     justify-content: space-between;
     }
         
-    .secondary_header_images {
-    padding-top: 50px;
-    padding-bottom: 94px;
-    }
-        
-    .secondary_header_list_item {
+    .our-services-card__top-section {
     position: relative;
     }
 
-    .about-info-text {
+    .our-services-card__text {
     padding: 27px 0;
     width: 100%;
     font-size: 14px;
     letter-spacing: 0.3px;
     text-align: center;
     text-transform: uppercase;
-    color: #fff; 
+    color: var(--light);
     position: absolute;
     background: rgba(47, 48, 58, 0.8);
     bottom: 0;

@@ -1,5 +1,5 @@
 .portfolio-gallery-card__overlay {
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--overlay-color);
   position: absolute;
   top: 0;
   left: 0;
@@ -7,7 +7,7 @@
   height: 100%;
   transform: translateY(100%);
   padding: 49px 45px 49px 24px ;
-  color: #FFFFFF;
+  color: var(--light);
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;

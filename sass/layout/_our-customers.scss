@@ -1,39 +1,49 @@
-    .our_customers {
+    .our-customers__heading {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    }
+    
+    .our-customers__container {
     list-style-type: none;
     display: flex;
     align-items: center;
     column-gap: 30px;
     }
     
-    .our_customers_list {
+    .our-customers__list {
     display: flex;
     justify-content: center;
     align-items: center;
     }
     
-    .our_customers_list_item {
+    .our-customers-card__top-section {
     display: flex;
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
-    fill: #afb1b8;
+    border: 1px solid var(--primary);
+    fill: var(--primary);
     border-radius: 4px;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 94px;
-    }
     
-    .our_customers_icon {
-    width: 106px;
-    height: 60px;
-    }
-    
-    .our_customers_list_item:hover,
-    .our_customers_list_item:focus {
-    fill: var(--secondary-color);
-    border-color: var(--secondary-color);
+    &:hover, &:focus {
+    fill: var(--accent);
+    border-color: var(--accent);
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }    
+    }
+
+    .our-customers-card__icon {
+    width: 106px;
+    height: 60px;
     }

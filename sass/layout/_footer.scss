@@ -1,9 +1,12 @@
     .footer_things {
     background-color: #2F303A;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
     }
 
     .logo--light {
-    color: var(--third-color);
+    color: var(--light);
     }
     
     .place {
@@ -13,12 +16,11 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    /* or 171% */
     letter-spacing: 0.03em;
-    color: #FFFFFF;
-    } 
-    .place:active {
+    color: var(--light);
+    &:active {
     text-decoration: underline;   
+    }
     }
     
     .mail {
@@ -28,7 +30,6 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    /* or 171% */
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);   
     }
@@ -44,31 +45,25 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #757575;
-    }
-    .telefon:active {
+    color: var(--detail-color);
+    &:active {
     text-decoration: underline;     
     }
+    }
 
-.footer_things {
-display: flex;
-padding-top: 60px;
-padding-bottom: 60px;
-}
+    .adress_footer {
+    padding-top: 20px;
+    }
 
-.adress_footer {
-padding-top: 20px;
-}
+    .two_side {
+    display: flex;
+    align-items: baseline;
+    }
 
-.two_side {
-display: flex;
-align-items: baseline;
-}
+    .left_side {
+    display: block;
+    }
 
-.left_side {
-display: block;
-}
-
-.right_side {
-margin-left: 70px;
-}
+    .right_side {
+    margin-left: 70px;
+    }

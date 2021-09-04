@@ -1,26 +1,33 @@
-    .why_us_list_image_icon_background {
+    .why_us__list /*ul class*/ {
+    display:  flex;
+    }
+    /*jak dałam flex-wrap: wrap; to się usunęły kolumny*/
+    
+    .why_us_card__top-section:not(:last-child) {
+    margin-right: 30px;
+    }
+
+    .why_us_card__icon_background {
     display: flex; 
     justify-content: center;
     align-items: center;
     width: 270px;
     height: 120px;
-    background: #F5F4FA;
+    background: var(--light-color);
     border-radius: 4px;
     }
 
-    .why_us_list_image_icon {
+    .why_us_card__icon {
     display: flex;  
     display: block;
     justify-content: center;
     width: 70px;
     height: 70px;
     }
-    
-    .why_us_list_name {
-    margin-top: 30px;
-    }
 
-    .why_us_list_name {
+    .why_us_card__name {
+    margin-top: 30px;
+    padding-bottom: 10px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
@@ -28,31 +35,15 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--background-color);
     }
-        
-    .why_us_list_text {
+
+    .why_us_card__text {
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    /* or 171% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--detail-color);
     }
-
-    /* SEKCJA WHY US */
-
-.why_us_list /*ul class*/ {
-display:  flex;
-}
-/*jak dałam flex-wrap: wrap; to się usunęły kolumny*/
-    
-.why_us_list_item:not(:last-child) {
-margin-right: 30px;
-}
-    
-.why_us_list_name {
-padding-bottom: 10px;  
-}
