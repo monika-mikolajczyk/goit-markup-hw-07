@@ -1,4 +1,4 @@
-.header-logo {
+    .logo {
     text-decoration: none;
     font-family: "Raleway";
     font-style: normal;
@@ -7,20 +7,15 @@
     line-height: 31px;
     letter-spacing: 0.03em;    
     color: #2196F3; 
+    text-decoration: none;
+    margin-right: 93px;
+    display: flex;
+    align-items: center;
     }
+
     .nazwa-klasy-4 {
     color:#FFFFFF;
     }
     .nazwa-klasy-2 {
     color: black;
     }
-
-.navigation-logo {
-display: flex;
-align-items: center;
-}
-
-.header-logo {
-text-decoration: none;
-margin-right: 93px;
-}
