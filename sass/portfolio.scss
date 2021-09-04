@@ -1,9 +1,11 @@
 @import "./utils/visually-hidden";
+@import "./utils/variables";
 
 @import "./base/common";
 @import "./base/container";
 @import "./base/section";
 
+@import "./layout/options";
 @import "./layout/portfolio";
 @import "./layout/header";
 @import "./layout/contact-info";

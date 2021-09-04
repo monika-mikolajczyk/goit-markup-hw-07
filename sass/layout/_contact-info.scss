@@ -8,42 +8,39 @@ padding-left: 10px;
 display: flex;
 }
 
-.contact_envelope {
-    display: flex;
-    align-items: center;
-    fill:#757575;
-    }
+.contact__list {
+display: flex;
+align-items: center;
+fill:#757575;
+}
+.contact__list:last-child {
+margin-left: 30px;
+}
+
+
+.phone_icon_link {
+display: flex;
+text-decoration: none;
+}
     
-    .contact_phone {
-    display: flex;
-    align-items: center;
-    fill:#757575;
-    padding-left: 30px;
-    }
-     
-    .phone_icon_link {
-    display: flex;
-    text-decoration: none;
-    }
+.adress_email_telefon:hover,
+.adress_email_telefon:focus {
+color: #2196F3;
+fill: #2196F3;
+transition-property: background-color, fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
     
-    .adress_email_telefon:hover,
-    .adress_email_telefon:focus {
-    color: #2196F3;
-    fill: #2196F3;
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+.icon_envelope {
+margin-right: 10px;
+}
     
-    .icon_envelope {
-    margin-right: 10px;
-    }
+.icon_phone {
+margin-right: 10px;
+}
     
-    .icon_phone {
-    margin-right: 10px;
-    }
-    
-    .adress_email_telefon {
-    display: flex;
-    align-items: center;
-    }
+.adress_email_telefon {
+display: flex;
+align-items: center;
+}

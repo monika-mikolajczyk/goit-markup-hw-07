@@ -1,6 +1,6 @@
 /* --- header --- */
 
-.hero {
+    .hero {
     background-color:rgba(47, 48, 58, 0.4);
     background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), 
     url('../images/background.jpg');
@@ -23,18 +23,18 @@
     color: #FFFFFF;
     }
 
-    .navigation-list {
+    .navigation__list {
     display: flex;
     align-items: center;
     }
     /* teraz przyciski "Agencja/Portfolio/Kontakt" 
        są w jednym wierszu */
 
-    .navigation-list-item:not(:last-child) {
+    .navigation__item:not(:last-child) {
     padding-right: 45px;
     }
     
-    .navigation-list-link {
+    .navigation__link {
     position:relative;
     text-decoration: none;    
     font-family: "Roboto";
@@ -47,12 +47,12 @@
     cursor: pointer;
     }
 
-    .navigation-list-link.current {
+    .navigation__link.current {
     color: var(--secondary-color);
     }
     
-    .navigation-list-link:hover,
-    .navigation-list-link:focus {
+    .navigation__link:hover,
+    .navigation__link:focus {
     color: #2196F3;
     transition-property: background-color, fill;
     transition-duration: 250ms;
@@ -60,7 +60,7 @@
     color: var(--secondary-color);
     }
     
-    .navigation-list-link.current::after
+    .navigation__link.current::after
     {
     content:"";
     display: block;

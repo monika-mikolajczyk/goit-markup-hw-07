@@ -1,4 +1,4 @@
-.overlay {
+.portfolio-gallery-card__overlay {
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
   top: 0;
@@ -13,10 +13,8 @@
   letter-spacing: 0.03em;
 }
 
-.options_images_list_item:hover .overlay,
-.options_images_list_item:focus .overlay,
-.options_images_list_item:hover .overlay,
-.options_images_list_item:focus .overlay {
+.portfolio-gallery-card__top-section:hover .portfolio-gallery-card__overlay,
+.portfolio-gallery-card__top-section:focus .portfolio-gallery-card__overlay {
   transform: translateY(0);
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

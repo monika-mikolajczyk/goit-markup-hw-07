@@ -13,6 +13,14 @@
 :root {
   --main-font: font-family "Roboto", sans-serif;
   --secondary-color: #2196f3;
+  --accent: #2196f3;
+  --third-color: #ffffff;
+  --dark-color: #000;
+}
+
+:root {
+  --main-font: font-family "Roboto", sans-serif;
+  --secondary-color: #2196f3;
   --third-color: #ffffff;
 }
 
@@ -76,31 +84,56 @@ img {
   padding-top: 94px;
 }
 
-.option_list_name_link {
+.options__names {
+  display: flex;
+  justify-content: center;
+}
+
+.options__list {
+  padding-top: 50px;
+  padding-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+
+.options__name:not(:last-child) {
+  padding-right: 8px;
+}
+
+.option__link {
+  background: #F5F4FA;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0;
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
 }
 
-.option_list_name_link:hover,
-.option_list_name_link:focus {
+.option__link:hover,
+.option__link:focus {
   background-color: #2196F3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
 }
 
-.options_images_project {
+.portfolio-gallery-card__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
@@ -111,7 +144,7 @@ img {
   color: #212121;
 }
 
-.options_images_name {
+.portfolio-gallery-card__category {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -122,74 +155,28 @@ img {
   color: #757575;
 }
 
-.portfolio-img {
+.portfolio-gallery-card__img {
   position: relative;
   overflow: hidden;
 }
 
-.options_images_project {
+.portfolio-gallery-card__title {
   margin: 0;
 }
 
-.options_list {
-  display: flex;
-  justify-content: center;
-}
-
-.options_list_name:not(:last-child) {
-  padding-right: 8px;
-}
-
-.option_list_name_link {
-  background: #F5F4FA;
-  border-radius: 4px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 0;
-}
-
-.option_list_name_link:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: #fff;
-}
-
-.option_list_name_link:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* SEKCJA OPTIONS_IMAGES */
-.options_images_list {
-  padding-top: 50px;
-  padding-bottom: 94px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: -30px;
-}
-
-.options_images_list_item {
+.portfolio-gallery-card__top-section {
   margin-top: 30px;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
 }
 
-.options_images_project {
+.portfolio-gallery-card__title {
   padding-top: 20px;
   padding-bottom: 4px;
 }
 
-.options_images_list_item:hover,
-.options_images_list_item:focus {
+.portfolio-gallery-card__top-section:hover,
+.portfolio-gallery-card__top-section:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transition-property: background-color, fill;
@@ -220,18 +207,18 @@ img {
   color: #FFFFFF;
 }
 
-.navigation-list {
+.navigation__list {
   display: flex;
   align-items: center;
 }
 
 /* teraz przyciski "Agencja/Portfolio/Kontakt" 
        są w jednym wierszu */
-.navigation-list-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   padding-right: 45px;
 }
 
-.navigation-list-link {
+.navigation__link {
   position: relative;
   text-decoration: none;
   font-family: "Roboto";
@@ -244,12 +231,12 @@ img {
   cursor: pointer;
 }
 
-.navigation-list-link.current {
+.navigation__link.current {
   color: var(--secondary-color);
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: #2196F3;
   transition-property: background-color, fill;
   transition-duration: 250ms;
@@ -257,7 +244,7 @@ img {
   color: var(--secondary-color);
 }
 
-.navigation-list-link.current::after {
+.navigation__link.current::after {
   content: "";
   display: block;
   width: 53px;
@@ -316,17 +303,14 @@ img {
   display: flex;
 }
 
-.contact_envelope {
+.contact__list {
   display: flex;
   align-items: center;
   fill: #757575;
 }
 
-.contact_phone {
-  display: flex;
-  align-items: center;
-  fill: #757575;
-  padding-left: 30px;
+.contact__list:last-child {
+  margin-left: 30px;
 }
 
 .phone_icon_link {
@@ -358,6 +342,10 @@ img {
 
 .footer_things {
   background-color: #2F303A;
+}
+
+.logo--light {
+  color: var(--third-color);
 }
 
 .place {
@@ -438,22 +426,18 @@ img {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #2196F3;
+  color: var(--accent);
   text-decoration: none;
   margin-right: 93px;
   display: flex;
   align-items: center;
 }
 
-.nazwa-klasy-4 {
-  color: #FFFFFF;
+.logo--dark {
+  color: var(--dark-color);
 }
 
-.nazwa-klasy-2 {
-  color: black;
-}
-
-.overlay {
+.portfolio-gallery-card__overlay {
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
   top: 0;
@@ -468,10 +452,8 @@ img {
   letter-spacing: 0.03em;
 }
 
-.options_images_list_item:hover .overlay,
-.options_images_list_item:focus .overlay,
-.options_images_list_item:hover .overlay,
-.options_images_list_item:focus .overlay {
+.portfolio-gallery-card__top-section:hover .portfolio-gallery-card__overlay,
+.portfolio-gallery-card__top-section:focus .portfolio-gallery-card__overlay {
   transform: translateY(0);
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -517,7 +499,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.description {
+.portfolio-gallery-description__bottom-section {
   padding: 15px 24px 20px 24px;
   border-bottom: 1px solid var(--third-color);
   border-left: 1px solid var(--third-color);
