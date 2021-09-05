@@ -1,29 +1,15 @@
-    .our-services {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--background-color);
-    }
-
-    .our-services__images {
-    padding-top: 50px;
-    padding-bottom: 94px;
-    }
-
     .our-services__list {
     display:  flex;
     justify-content: space-between;
     }
         
-    .our-services-card__top-section {
+    .our-services__item {
     position: relative;
+    margin-top: 50px;
+    margin-bottom: 94px;
     }
 
-    .our-services-card__text {
+    .our-services__text {
     padding: 27px 0;
     width: 100%;
     font-size: 14px;

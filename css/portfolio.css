@@ -76,6 +76,17 @@ img {
   text-decoration: none;
 }
 
+.secondary-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -195,7 +206,7 @@ img {
   background-size: cover;
 }
 
-.slogan {
+.hero__header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -273,12 +284,10 @@ img {
 
 .hero .container {
   max-width: 1200px;
-  padding-top: 80px;
-  padding-bottom: 94px;
   align-items: center;
 }
 
-.slogan {
+.hero__header {
   padding-bottom: 30px;
   margin: auto;
 }
@@ -461,7 +470,7 @@ img {
   align-items: flex-start;
 }
 
-.social-list {
+.our-team-social {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -470,7 +479,7 @@ img {
   padding-bottom: 30px;
 }
 
-.social-list__item {
+.our-team-social__item {
   justify-content: center;
 }
 

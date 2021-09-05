@@ -10,7 +10,7 @@
     background-size: cover;
     }
     
-    .slogan {
+    .hero__header {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -87,12 +87,10 @@
 
     .hero .container {
     max-width: 1200px;
-    padding-top: 80px;
-    padding-bottom: 94px;
     align-items: center;
     }
         
-    .slogan {
+    .hero__header {
     padding-bottom: 30px;
     margin: auto;
     }

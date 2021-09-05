@@ -76,6 +76,17 @@ img {
   text-decoration: none;
 }
 
+.secondary-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -114,7 +125,7 @@ img {
   color: var(--dark);
 }
 
-.modal-btn {
+.hero__modal-btn {
   padding: 17px 40px 17px 40px;
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -133,7 +144,7 @@ img {
   cursor: pointer;
 }
 
-.social-list {
+.our-team-social {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,7 +153,7 @@ img {
   padding-bottom: 30px;
 }
 
-.social-list__item {
+.our-team-social__item {
   justify-content: center;
 }
 
@@ -507,7 +518,7 @@ img {
   background-size: cover;
 }
 
-.slogan {
+.hero__header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -585,12 +596,10 @@ img {
 
 .hero .container {
   max-width: 1200px;
-  padding-top: 80px;
-  padding-bottom: 94px;
   align-items: center;
 }
 
-.slogan {
+.hero__header {
   padding-bottom: 30px;
   margin: auto;
 }
@@ -603,32 +612,18 @@ img {
   list-style-type: none;
 }
 
-.our-services {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--background-color);
-}
-
-.our-services__images {
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
-
 .our-services__list {
   display: flex;
   justify-content: space-between;
 }
 
-.our-services-card__top-section {
+.our-services__item {
   position: relative;
+  margin-top: 50px;
+  margin-bottom: 94px;
 }
 
-.our-services-card__text {
+.our-services__text {
   padding: 27px 0;
   width: 100%;
   font-size: 14px;
@@ -641,16 +636,16 @@ img {
   bottom: 0;
 }
 
-.why_us__list {
+.why-us__list {
   display: flex;
 }
 
 /*jak dałam flex-wrap: wrap; to się usunęły kolumny*/
-.why_us_card__top-section:not(:last-child) {
+.why-us__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.why_us_card__icon_background {
+.why-us-card__icon-background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -660,7 +655,7 @@ img {
   border-radius: 4px;
 }
 
-.why_us_card__icon {
+.why-us-card__icon {
   display: flex;
   display: block;
   justify-content: center;
@@ -668,7 +663,7 @@ img {
   height: 70px;
 }
 
-.why_us_card__name {
+.why-us-card__name {
   margin-top: 30px;
   padding-bottom: 10px;
   font-family: "Roboto";
@@ -681,7 +676,7 @@ img {
   color: var(--background-color);
 }
 
-.why_us_card__text {
+.why-us-card__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -695,35 +690,21 @@ img {
   background-color: var(--light-color);
 }
 
-.our-team__heading {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--background-color);
-}
-
-.our-team-cards__top-section {
+.our-team__list {
+  display: flex;
+  justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 94px;
 }
 
-.our-team-cards__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.our-team-cards-item__bottom-section {
+.our-team__item {
   background: var(--light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.our-team-cards-item__name {
+.our-team__name {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -736,7 +717,7 @@ img {
   padding-bottom: 10px;
 }
 
-.our-team-cards-item__skill {
+.our-team__role {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -746,17 +727,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--detail-color);
   padding-bottom: 16px;
-}
-
-.our-customers__heading {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .our-customers__container {

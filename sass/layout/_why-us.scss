@@ -1,13 +1,13 @@
-    .why_us__list /*ul class*/ {
-    display:  flex;
+    .why-us__list /*ul class*/ {
+    display: flex;
     }
     /*jak dałam flex-wrap: wrap; to się usunęły kolumny*/
     
-    .why_us_card__top-section:not(:last-child) {
+    .why-us__item:not(:last-child) {
     margin-right: 30px;
     }
 
-    .why_us_card__icon_background {
+    .why-us-card__icon-background {
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@
     border-radius: 4px;
     }
 
-    .why_us_card__icon {
+    .why-us-card__icon {
     display: flex;  
     display: block;
     justify-content: center;
@@ -25,7 +25,7 @@
     height: 70px;
     }
 
-    .why_us_card__name {
+    .why-us-card__name {
     margin-top: 30px;
     padding-bottom: 10px;
     font-family: "Roboto";
@@ -38,7 +38,7 @@
     color: var(--background-color);
     }
 
-    .why_us_card__text {
+    .why-us-card__text {
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
