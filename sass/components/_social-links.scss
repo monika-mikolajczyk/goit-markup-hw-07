@@ -11,7 +11,7 @@
     justify-content: center;
     }
     
-    .social-list-link__top-section {
+    .social-list__link {
     display: flex;
     width: 44px;
     height: 44px;
@@ -22,8 +22,8 @@
     align-items: center;
     }
 
-    .social-list-link__top-section:hover,
-    .social-list-link__top-section:focus {
+    .social-list__link:hover,
+    .social-list__link:focus {
     fill: var(--light);
     background-color: var(--accent);
     transition-property: background-color, fill;
@@ -31,7 +31,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .social-list-link__icon {
+    .social-list__icon {
     width: 20px;
     height: 20px;
     align-items: center;

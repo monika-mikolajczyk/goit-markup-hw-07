@@ -1,5 +1,5 @@
-    .footer_things {
-    background-color: #2F303A;
+    .footer-things {
+    background-color: var(--footer-color);
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -16,6 +16,9 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
+    height: 21px;
+    display: inline-block;
+    margin-bottom: 9px;
     letter-spacing: 0.03em;
     color: var(--light);
     &:active {
@@ -28,6 +31,9 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
+    height: 21px;
+    display: inline-block;
+    margin-bottom: 9px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -44,6 +50,8 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    height: 21px;
+    display: inline-block;
     letter-spacing: 0.02em;
     color: var(--detail-color);
     &:active {
@@ -51,19 +59,19 @@
     }
     }
 
-    .adress_footer {
+    .adress-footer {
     padding-top: 20px;
     }
 
-    .two_side {
+    .two-side {
     display: flex;
     align-items: baseline;
     }
 
-    .left_side {
+    .left-side {
     display: block;
     }
 
-    .right_side {
+    .right-side {
     margin-left: 70px;
     }

@@ -1,4 +1,9 @@
-/* --- header --- */
+   .header .contact {
+    margin-left: auto;
+    }
+    .contact {
+    list-style-type: none;
+    }
 
     .hero {
     background-color:rgba(47, 48, 58, 0.4);
@@ -10,6 +15,11 @@
     background-size: cover;
     }
     
+    .hero .container {
+    max-width: 1200px;
+    align-items: center;
+    }
+
     .hero__header {
     font-family: "Roboto";
     font-style: normal;
@@ -20,6 +30,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light);
+    padding-bottom: 30px;
+    margin: auto;
     }
 
     .navigation__list {
@@ -69,35 +81,4 @@
     top:45px;
     border-radius: 2px;
     left:2px;
-    }
-    
-    .adress_email_telefon {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--detail-color);
-    &:active {
-    text-decoration: underline;    
-    }
-    }
-
-    .hero .container {
-    max-width: 1200px;
-    align-items: center;
-    }
-        
-    .hero__header {
-    padding-bottom: 30px;
-    margin: auto;
-    }
-
-    .header .contact {
-    margin-left: auto;
-    }
-    .contact {
-    list-style-type: none;
     }

@@ -16,6 +16,7 @@
   --dark: #000;
   --accent: #2196f3;
   --background-color: #212121;
+  --footer-color: #2F303A;
   --detail-color: #757575;
   --primary: #afb1b8;
   --light-color: #F5F4FA;
@@ -29,6 +30,7 @@
   --dark: #000;
   --accent: #2196f3;
   --background-color: #212121;
+  --footer-color: #2F303A;
   --detail-color: #757575;
   --primary: #afb1b8;
   --light-color: #F5F4FA;
@@ -157,7 +159,7 @@ img {
   justify-content: center;
 }
 
-.social-list-link__top-section {
+.social-list__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -168,8 +170,8 @@ img {
   align-items: center;
 }
 
-.social-list-link__top-section:hover,
-.social-list-link__top-section:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   fill: var(--light);
   background-color: var(--accent);
   transition-property: background-color, fill;
@@ -177,7 +179,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-link__icon {
+.social-list__icon {
   width: 20px;
   height: 20px;
   align-items: center;
@@ -473,16 +475,16 @@ img {
   color: var(--light);
 }
 
-.follow-us__top-section {
+.follow-us__list {
   display: flex;
   align-items: center;
 }
 
-.follow-us__list:not(:last-child) {
+.follow-us__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.follow-us-link__top-section {
+.follow-us__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -494,7 +496,7 @@ img {
   margin-top: 20px;
 }
 
-.follow-us-link__top-section:hover, .follow-us-link__top-section:focus {
+.follow-us__link:hover, .follow-us__link:focus {
   fill: var(--light);
   background-color: var(--accent);
   transition-property: background-color, fill;
@@ -502,13 +504,20 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.follow-us-link__icon {
+.follow-us__icon {
   width: 20px;
   height: 20px;
   display: block;
 }
 
-/* --- header --- */
+.header .contact {
+  margin-left: auto;
+}
+
+.contact {
+  list-style-type: none;
+}
+
 .hero {
   background-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
@@ -516,6 +525,11 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-size: cover;
+}
+
+.hero .container {
+  max-width: 1200px;
+  align-items: center;
 }
 
 .hero__header {
@@ -528,6 +542,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light);
+  padding-bottom: 30px;
+  margin: auto;
 }
 
 .navigation__list {
@@ -577,39 +593,6 @@ img {
   top: 45px;
   border-radius: 2px;
   left: 2px;
-}
-
-.adress_email_telefon {
-  text-decoration: none;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--detail-color);
-}
-
-.adress_email_telefon:active {
-  text-decoration: underline;
-}
-
-.hero .container {
-  max-width: 1200px;
-  align-items: center;
-}
-
-.hero__header {
-  padding-bottom: 30px;
-  margin: auto;
-}
-
-.header .contact {
-  margin-left: auto;
-}
-
-.contact {
-  list-style-type: none;
 }
 
 .our-services__list {
@@ -736,13 +719,7 @@ img {
   column-gap: 30px;
 }
 
-.our-customers__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.our-customers-card__top-section {
+.our-customers__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -755,7 +732,7 @@ img {
   margin-bottom: 94px;
 }
 
-.our-customers-card__top-section:hover, .our-customers-card__top-section:focus {
+.our-customers__link:hover, .our-customers__link:focus {
   fill: var(--accent);
   border-color: var(--accent);
   transition-property: background-color, fill;
@@ -763,18 +740,26 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-customers-card__icon {
+.our-customers__icon {
   width: 106px;
   height: 60px;
 }
 
-.adress_email_telefon {
+.adress-email-telefon {
   padding-left: 10px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--detail-color);
 }
 
-.adress_email_telefon:hover, .adress_email_telefon:focus {
+.adress-email-telefon:hover, .adress-email-telefon:focus {
   color: var(--accent);
   fill: var(--accent);
   transition-property: background-color, fill;
@@ -782,8 +767,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adress_email_telefon:not(:last-child) {
+.adress-email-telefon:not(:last-child) {
   margin-right: 50px;
+}
+
+.adress-email-telefon:active {
+  text-decoration: underline;
 }
 
 .contact {
@@ -791,8 +780,6 @@ img {
 }
 
 .contact__list {
-  display: flex;
-  align-items: center;
   fill: var(--detail-color);
 }
 
@@ -800,21 +787,21 @@ img {
   margin-left: 30px;
 }
 
-.phone_icon_link {
+.phone-icon-link {
   display: flex;
   text-decoration: none;
 }
 
-.icon_envelope {
+.icon-envelope {
   margin-right: 10px;
 }
 
-.icon_phone {
+.icon-phone {
   margin-right: 10px;
 }
 
-.footer_things {
-  background-color: #2F303A;
+.footer-things {
+  background-color: var(--footer-color);
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -831,6 +818,9 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  height: 21px;
+  display: inline-block;
+  margin-bottom: 9px;
   letter-spacing: 0.03em;
   color: var(--light);
 }
@@ -844,6 +834,9 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
+  height: 21px;
+  display: inline-block;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -861,6 +854,8 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  height: 21px;
+  display: inline-block;
   letter-spacing: 0.02em;
   color: var(--detail-color);
 }
@@ -869,20 +864,20 @@ img {
   text-decoration: underline;
 }
 
-.adress_footer {
+.adress-footer {
   padding-top: 20px;
 }
 
-.two_side {
+.two-side {
   display: flex;
   align-items: baseline;
 }
 
-.left_side {
+.left-side {
   display: block;
 }
 
-.right_side {
+.right-side {
   margin-left: 70px;
 }
 /*# sourceMappingURL=main.css.map */
