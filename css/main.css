@@ -156,6 +156,10 @@ img {
 }
 
 .our-team-social__item {
+  justify-content: center;
+}
+
+.our-team-social__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -166,8 +170,8 @@ img {
   align-items: center;
 }
 
-.our-team-social__link:hover,
-.our-team-social__link:focus {
+.our-team-social__link:hover, .our-team-social__link:focus {
+  cursor: pointer;
   fill: var(--light);
   background-color: var(--accent);
   transition-property: background-color, fill;
@@ -670,6 +674,7 @@ img {
 }
 
 .our-team__list {
+  display: flex;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 94px;
@@ -775,10 +780,14 @@ img {
 }
 
 .contact__list {
+  display: flex;
+}
+
+.contact__item {
   fill: var(--detail-color);
 }
 
-.contact__list:last-child {
+.contact__item:last-child {
   margin-left: 30px;
 }
 
